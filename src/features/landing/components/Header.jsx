@@ -32,6 +32,9 @@ export const Header = () => {
                                 <li className="nav-item">
                                     <NavLink to="/rickandmorty" className="nav-link">API</NavLink>
                                 </li>
+                                <li className="nav-item">
+                                    <NavLink to="/Props" className="nav-link">Props</NavLink>
+                                </li>
                             </ul>
                         </div>
                     </dialog>

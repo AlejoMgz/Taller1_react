@@ -9,6 +9,8 @@ const Login = lazy(() => import('./features/auth/components/Login').then(m => ({
 const Resgister = lazy(() => import('./features/auth/components/resgister').then(m => ({ default: m.Resgister })))
 const Forgot = lazy(() => import('./features/auth/components/Forgot').then(m => ({ default: m.Forgot })))
 const Rickandmorty = lazy(() => import('./features/auth/components/Rickandmorty').then(m => ({ default: m.Rickandmorty })))
+// Corrige esta línea en tu App.jsx para que apunte bien a Props.jsx
+const Profile = lazy(() => import('./features/auth/components/Props'))
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/register" element={<Resgister />} />
           <Route path="/forgot" element={<Forgot />} />
           <Route path="/rickandmorty" element={<Rickandmorty />} />
+          <Route path="/Props" element={<Profile />} />
         </Routes>
       </Suspense>
       <Footer />
