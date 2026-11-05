@@ -1,10 +1,12 @@
-# 🏍️ Taller 1 de React - MotoApp 
+# Taller 1 de React - MotoApp 
 
 Desarrollada con **React (Vite)** y **Bootstrap**, centrada en la temática del motociclismo, maquetación profesional, consumo de APIs REST y manejo avanzado de componentes, props y enrutamiento.
 
+🔗 **[Ver aplicación en vivo (GitHub Pages)](https://AlejoMgz.github.io/Taller1_react/)**
+
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 * **Landing Page Optimizada**: Sección principal con banner informativo (*Pasión Por las Motos*) y una sección de modelos destacados organizados en tarjetas responsivas.
 * **Consumo de API (Rick and Morty)**: 
@@ -17,7 +19,7 @@ Desarrollada con **React (Vite)** y **Bootstrap**, centrada en la temática del 
 
 ---
 
-## 🛠️ Tecnologías y Herramientas Utilizadas
+## Tecnologías y Herramientas Utilizadas
 
 * **React 18+** (con Hooks: `useState`, `useEffect`)
 * **Vite** (Entorno de desarrollo rápido)

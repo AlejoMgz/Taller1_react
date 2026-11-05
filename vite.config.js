@@ -2,15 +2,15 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/Taller1_react/', // Configuración clave para el despliegue en GitHub Pages
+  base: '/Taller1_react/',
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,jsx,css,html,ico,png,svg,jpg,webp}']
+        globPatterns: ['**/*.{js,jsx,css,html,ico,png,svg,jpg,webp}'],
+        maximumFileSizeToCacheInBytes: 3000000 // <--- Aumenta el límite a 3MB
       },
       includeAssets: ['descarga.png', 'descargab.png', 'PWA.png', 'favicon.svg'],
       manifest: {
@@ -22,7 +22,6 @@ export default defineConfig({
         display: 'standalone',
         theme_color: '#000000',
         background_color: '#ffffff',
-
         screenshots: [
           {
             src: "PWA.png",
@@ -31,7 +30,6 @@ export default defineConfig({
             form_factor: "wide"
           }
         ],
-
         icons: [
           {
             src: 'descarga.png',
