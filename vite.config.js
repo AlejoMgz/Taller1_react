@@ -1,9 +1,10 @@
-import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Taller1_react/', // Configuración clave para el despliegue en GitHub Pages
   plugins: [
     react(),
     VitePWA({
@@ -16,12 +17,11 @@ export default defineConfig({
         name: 'Mi primera PWA',
         short_name: 'MyAppPWA',
         description: 'La PWA mas fantastica del mundo',
-        scope: '/',
-        start_url: '/',
+        scope: '/Taller1_react/',
+        start_url: '/Taller1_react/',
         display: 'standalone',
         theme_color: '#000000',
         background_color: '#ffffff',
-
 
         screenshots: [
           {
